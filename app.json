@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "cell-c",
+    "slug": "cell-c",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/(common)/assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./app/(common)/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "This app requires Face ID access to authenticate",
+        "NSContactsUsageDescription": "This app requires access to your contacts to enable you to select a number from your contacts"
+      },
+      "entitlements": {
+        "aps-environment": "production"
+      },
+      "bundleIdentifier": "com.siveteraflow.cellc"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/(common)/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.siveteraflow.cellc"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./app/(common)/assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./app/(common)/assets/fonts/CellCSans-Bold.otf",
+            "./app/(common)/assets/fonts/CellCSans-Medium.otf",
+            "./app/(common)/assets/fonts/CellCSans-Regular.otf",
+            "./app/(common)/assets/fonts/Poppins-Regular.ttf",
+            "./app/(common)/assets/fonts/Poppins-Medium.ttf",
+            "./app/(common)/assets/fonts/Poppins-Bold.ttf"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true,
+            "useFrameworks": "static"
+          },
+          "android": {
+            "newArchEnabled": true
+          }
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow $(PRODUCT_NAME) to access your contacts."
+        }
+      ],
+      "@react-native-firebase/app"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["svg"]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d0864d1d-55fc-489d-92a5-50ddaed4ca9a"
+      }
+    },
+    "owner": "teraflow"
+  }
+}
