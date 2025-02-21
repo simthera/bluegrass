@@ -48,3 +48,5 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+The assessment took approximately 13 hours/days to complete. The most challenging part was ensuring that the bottom tab navigation displayed correctly across all screens, as well as debugging the custom fonts to apply correctly in different typography variants. Additionally, handling the cart context provider so that it worked seamlessly across the app required some adjustments. Despite these challenges, the overall development process was smooth, and the final implementation closely matched the provided design.
